@@ -498,17 +498,17 @@ export default function TrueCostAI() {
       </section>
 
       {/* Social Proof Section */}
-      <section className="w-full bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4 mt-6">
-        <div className="text-center mb-4">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Trusted by 10,000+ Users</h3>
-          <p className="text-sm text-gray-600">Transform your AI photos instantly</p>
+      <section className="w-full bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-3 mt-4">
+        <div className="text-center mb-3">
+          <h3 className="font-bold text-base text-gray-800 mb-1">Trusted by 10,000+ Users</h3>
+          <p className="text-xs text-gray-600">Transform your AI photos instantly</p>
         </div>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-3">
           <a 
             href="https://enhancor.ai" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-white hover:bg-gray-50 text-gray-800 px-4 py-2 rounded-lg font-semibold shadow-sm transition-colors text-sm"
+            className="bg-white hover:bg-gray-50 text-gray-800 px-3 py-1.5 rounded-md font-semibold shadow-sm transition-colors text-xs"
           >
             Try Enhancor.ai
           </a>
@@ -516,7 +516,7 @@ export default function TrueCostAI() {
             href="https://kora.enhancor.ai" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-white hover:bg-gray-50 text-gray-800 px-4 py-2 rounded-lg font-semibold shadow-sm transition-colors text-sm"
+            className="bg-white hover:bg-gray-50 text-gray-800 px-3 py-1.5 rounded-md font-semibold shadow-sm transition-colors text-xs"
           >
             Create with KORA
           </a>
@@ -567,7 +567,7 @@ export default function TrueCostAI() {
             </div>
           ) : (
             <div className="flex items-center space-x-2">
-              <span className="text-gray-400">🎨 Generate realistic AI images with</span>
+              <span className="text-gray-400">Generate realistic AI images with</span>
               <a 
                 href="https://kora.enhancor.ai" 
                 target="_blank" 
