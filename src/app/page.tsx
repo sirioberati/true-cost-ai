@@ -465,7 +465,7 @@ export default function TrueCostAI() {
             </a>
           </div>
           <div className="flex items-center space-x-2">
-            <span className="text-gray-400">sponsored by</span>
+            <span className="text-gray-400">Sirio loves</span>
             <a 
               href="https://enhancor.ai" 
               target="_blank" 
