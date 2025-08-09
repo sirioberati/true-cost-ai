@@ -107,11 +107,25 @@ export default function TrueCostAI() {
   const [currentFact, setCurrentFact] = useState(0);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [bannerText, setBannerText] = useState(0);
+  const [showExitPopup, setShowExitPopup] = useState(false);
+
+  // Exit intent popup
+  useEffect(() => {
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (e.clientY <= 0) {
+        setShowExitPopup(true);
+      }
+    };
+
+    document.addEventListener('mouseleave', handleMouseLeave);
+    return () => document.removeEventListener('mouseleave', handleMouseLeave);
+  }, []);
 
   // Rotate banner text with different timings
   useEffect(() => {
     let timeoutId1: NodeJS.Timeout;
     let timeoutId2: NodeJS.Timeout;
+    let timeoutId3: NodeJS.Timeout;
     
     const startRotation = () => {
       // Show personal brand slide for 5 seconds
@@ -122,8 +136,13 @@ export default function TrueCostAI() {
         setBannerText(1);
         
         timeoutId2 = setTimeout(() => {
-          // Restart the cycle
-          startRotation();
+          // Show KORA slide for 10 seconds
+          setBannerText(2);
+          
+          timeoutId3 = setTimeout(() => {
+            // Restart the cycle
+            startRotation();
+          }, 10000);
         }, 10000);
       }, 5000);
     };
@@ -133,6 +152,7 @@ export default function TrueCostAI() {
     return () => {
       if (timeoutId1) clearTimeout(timeoutId1);
       if (timeoutId2) clearTimeout(timeoutId2);
+      if (timeoutId3) clearTimeout(timeoutId3);
     };
   }, []);
 
@@ -477,7 +497,45 @@ export default function TrueCostAI() {
         </div>
       </section>
 
+      {/* Social Proof Section */}
+      <section className="w-full bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4 mt-6">
+        <div className="text-center mb-4">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">Trusted by 10,000+ Users</h3>
+          <p className="text-sm text-gray-600">Transform your AI photos instantly</p>
+        </div>
+        <div className="flex justify-center space-x-4">
+          <a 
+            href="https://enhancor.ai" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white hover:bg-gray-50 text-gray-800 px-4 py-2 rounded-lg font-semibold shadow-sm transition-colors text-sm"
+          >
+            Try Enhancor.ai
+          </a>
+          <a 
+            href="https://kora.enhancor.ai" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white hover:bg-gray-50 text-gray-800 px-4 py-2 rounded-lg font-semibold shadow-sm transition-colors text-sm"
+          >
+            Create with KORA
+          </a>
+        </div>
+      </section>
+
       <canvas ref={canvasRef} className="hidden" />
+      
+      {/* Floating CTA Button */}
+      <div className="fixed top-4 right-4 z-[9998]">
+        <a 
+          href="https://enhancor.ai" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-sm"
+        >
+          Fix AI Photos
+        </a>
+      </div>
       
       {/* Sticky bottom banner */}
       <div className="fixed bottom-0 left-0 right-0 bg-black text-white p-4 border-t border-gray-800 z-[9999]" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999 }}>
@@ -494,7 +552,7 @@ export default function TrueCostAI() {
                 @heysirio
               </a>
             </div>
-          ) : (
+          ) : bannerText === 1 ? (
             <div className="flex items-center space-x-2">
               <span className="text-gray-400">⚡ Try</span>
               <a 
@@ -506,6 +564,18 @@ export default function TrueCostAI() {
                 Enhancor.ai
               </a>
               <span className="text-gray-400">fix AI photos now</span>
+            </div>
+          ) : (
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-400">🎨 Generate realistic AI images with</span>
+              <a 
+                href="https://kora.enhancor.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-bold hover:underline transition-colors text-blue-300 hover:text-blue-200"
+              >
+                KORA
+              </a>
             </div>
           )}
                     {bannerText === 0 ? (
@@ -520,7 +590,7 @@ export default function TrueCostAI() {
                 Enhancor.ai
               </a>
             </div>
-          ) : (
+          ) : bannerText === 1 ? (
             <a 
               href="https://enhancor.ai" 
               target="_blank" 
@@ -529,9 +599,52 @@ export default function TrueCostAI() {
             >
               Try Now →
             </a>
+          ) : (
+            <a 
+              href="https://kora.enhancor.ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-bold transition-colors text-sm"
+            >
+              Create Now →
+            </a>
           )}
         </div>
       </div>
+      
+      {/* Exit Intent Popup */}
+      {showExitPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-[10000] flex items-center justify-center p-4">
+          <div className="bg-white rounded-xl p-6 max-w-sm w-full text-center">
+            <h3 className="font-bold text-xl mb-2">Wait! 🚀</h3>
+            <p className="text-gray-600 mb-4">Don't leave without trying our AI photo tools!</p>
+            <div className="space-y-3">
+              <a 
+                href="https://enhancor.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-bold transition-colors"
+              >
+                Fix AI Photos Now
+              </a>
+              <a 
+                href="https://kora.enhancor.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-bold transition-colors"
+              >
+                Create with KORA
+              </a>
+              <button 
+                onClick={() => setShowExitPopup(false)}
+                className="block w-full text-gray-500 hover:text-gray-700 py-2"
+              >
+                Maybe later
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       
              <footer className="text-xs text-gray-400 mt-6 text-center pb-20">
          Fr fr, this is just the materials cost. They're still making bank on labor, shipping, and marketing 💸
