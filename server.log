@@ -1,0 +1,1027 @@
+
+> true-cost-ai@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.4.6 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.2.138:3000
+
+ ✓ Starting...
+ ✓ Ready in 686ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1122ms
+ GET / 200 in 1281ms
+ ✓ Compiled /api/analyze in 194ms
+API called - starting analysis
+Image received, length: 174331
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {"productName": "Bfit Vanilla Protein Shake 460ml", "category": "Protein Shake", "materials": ["Water", "Milk Protein Concentrate", "Vanilla Flavor", "Sweeteners", "Stabilizers", "Plastic Bottle"], "estimatedBOM": {"lowUSD": 0.50, "highUSD": 0.80, "methodology": "Estimated based on typical ingredient costs and packaging for protein shakes."}, "marketPrice": {"lowUSD": 2.00, "highUSD": 3.50, "currency": "USD", "notes": "Based on typical retail prices for protein shakes of similar size and brand."}, "confidence": 0.9, "caution": "Estimates are based on typical market data and may vary by region."}
+Parsed JSON: {
+  productName: 'Bfit Vanilla Protein Shake 460ml',
+  category: 'Protein Shake',
+  materials: [
+    'Water',
+    'Milk Protein Concentrate',
+    'Vanilla Flavor',
+    'Sweeteners',
+    'Stabilizers',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs and packaging for protein shakes.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3.5,
+    currency: 'USD',
+    notes: 'Based on typical retail prices for protein shakes of similar size and brand.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+Final result: {
+  productName: 'Bfit Vanilla Protein Shake 460ml',
+  category: 'Protein Shake',
+  materials: [
+    'Water',
+    'Milk Protein Concentrate',
+    'Vanilla Flavor',
+    'Sweeteners',
+    'Stabilizers',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs and packaging for protein shakes.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3.5,
+    currency: 'USD',
+    notes: 'Based on typical retail prices for protein shakes of similar size and brand.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+ POST /api/analyze 200 in 8643ms
+API called - starting analysis
+Image received, length: 151355
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {"productName": "No product detected", "estimatedBOM": {"lowUSD": 0, "highUSD": 0, "methodology": "No product visible in frame"}, "marketPrice": {"lowUSD": 0, "highUSD": 0, "currency": "USD", "notes": "No product visible"}}
+Parsed JSON: {
+  productName: 'No product detected',
+  estimatedBOM: { lowUSD: 0, highUSD: 0, methodology: 'No product visible in frame' },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'No product visible'
+  }
+}
+Final result: {
+  productName: 'No product detected',
+  estimatedBOM: { lowUSD: 0, highUSD: 0, methodology: 'No product visible in frame' },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'No product visible'
+  }
+}
+ POST /api/analyze 200 in 3549ms
+API called - starting analysis
+Image received, length: 154059
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {"productName": "No product detected", "estimatedBOM": {"lowUSD": 0, "highUSD": 0, "methodology": "No product visible in frame"}, "marketPrice": {"lowUSD": 0, "highUSD": 0, "currency": "USD", "notes": "No product visible"}}
+Parsed JSON: {
+  productName: 'No product detected',
+  estimatedBOM: { lowUSD: 0, highUSD: 0, methodology: 'No product visible in frame' },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'No product visible'
+  }
+}
+Final result: {
+  productName: 'No product detected',
+  estimatedBOM: { lowUSD: 0, highUSD: 0, methodology: 'No product visible in frame' },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'No product visible'
+  }
+}
+ POST /api/analyze 200 in 2967ms
+API called - starting analysis
+Image received, length: 197083
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {"productName": "3Fit Protein Shake Vanilla 34g", "category": "Protein Shake", "materials": ["Water", "Milk Protein", "Flavoring", "Sweeteners", "Preservatives", "Plastic Bottle"], "estimatedBOM": {"lowUSD": 0.50, "highUSD": 0.80, "methodology": "Estimated based on typical ingredient costs for protein shakes and packaging materials."}, "marketPrice": {"lowUSD": 2.00, "highUSD": 3.00, "currency": "USD", "notes": "Estimated based on typical retail prices for protein shakes of similar size and protein content."}, "confidence": 0.9, "caution": "Estimates are based on typical market data and may vary by region."}
+Parsed JSON: {
+  productName: '3Fit Protein Shake Vanilla 34g',
+  category: 'Protein Shake',
+  materials: [
+    'Water',
+    'Milk Protein',
+    'Flavoring',
+    'Sweeteners',
+    'Preservatives',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein shakes and packaging materials.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3,
+    currency: 'USD',
+    notes: 'Estimated based on typical retail prices for protein shakes of similar size and protein content.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+Final result: {
+  productName: '3Fit Protein Shake Vanilla 34g',
+  category: 'Protein Shake',
+  materials: [
+    'Water',
+    'Milk Protein',
+    'Flavoring',
+    'Sweeteners',
+    'Preservatives',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein shakes and packaging materials.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3,
+    currency: 'USD',
+    notes: 'Estimated based on typical retail prices for protein shakes of similar size and protein content.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+ POST /api/analyze 200 in 8170ms
+ ✓ Compiled in 23ms
+ ✓ Compiled in 14ms
+ ✓ Compiled in 12ms
+ ✓ Compiled in 12ms
+ ✓ Compiled in 12ms
+ ✓ Compiled in 30ms
+ ✓ Compiled in 27ms
+API called - starting analysis
+Image received, length: 177591
+Calling OpenAI API...
+ ✓ Compiled in 27ms
+OpenAI API response received
+GPT Response: {"productName": "Notes from Underground by Fyodor Dostoevsky - Penguin Classics", "category": "Book", "materials": ["Paper", "Ink", "Glue"], "estimatedBOM": {"lowUSD": 1, "highUSD": 2, "methodology": "Estimated based on typical printing and material costs for paperback books"}, "marketPrice": {"lowUSD": 8, "highUSD": 15, "currency": "USD", "notes": "Based on typical retail prices for Penguin Classics paperbacks"}, "environmentalImpact": {"carbonFootprint": {"kgCO2e": 1, "methodology": "Estimated based on average emissions for book production and distribution"}, "sustainabilityScore": 70, "recyclability": {"percentage": 90, "notes": "Paper is highly recyclable, though glue and ink may reduce recyclability slightly"}, "environmentalNotes": "Books have a relatively low environmental impact compared to electronic devices, but sustainable sourcing of paper is important"}, "confidence": 0.95, "caution": "Estimates are based on typical costs and may vary slightly depending on specific edition and print run"}
+Parsed JSON: {
+  productName: 'Notes from Underground by Fyodor Dostoevsky - Penguin Classics',
+  category: 'Book',
+  materials: [ 'Paper', 'Ink', 'Glue' ],
+  estimatedBOM: {
+    lowUSD: 1,
+    highUSD: 2,
+    methodology: 'Estimated based on typical printing and material costs for paperback books'
+  },
+  marketPrice: {
+    lowUSD: 8,
+    highUSD: 15,
+    currency: 'USD',
+    notes: 'Based on typical retail prices for Penguin Classics paperbacks'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 1,
+      methodology: 'Estimated based on average emissions for book production and distribution'
+    },
+    sustainabilityScore: 70,
+    recyclability: {
+      percentage: 90,
+      notes: 'Paper is highly recyclable, though glue and ink may reduce recyclability slightly'
+    },
+    environmentalNotes: 'Books have a relatively low environmental impact compared to electronic devices, but sustainable sourcing of paper is important'
+  },
+  confidence: 0.95,
+  caution: 'Estimates are based on typical costs and may vary slightly depending on specific edition and print run'
+}
+Final result: {
+  productName: 'Notes from Underground by Fyodor Dostoevsky - Penguin Classics',
+  category: 'Book',
+  materials: [ 'Paper', 'Ink', 'Glue' ],
+  estimatedBOM: {
+    lowUSD: 1,
+    highUSD: 2,
+    methodology: 'Estimated based on typical printing and material costs for paperback books'
+  },
+  marketPrice: {
+    lowUSD: 8,
+    highUSD: 15,
+    currency: 'USD',
+    notes: 'Based on typical retail prices for Penguin Classics paperbacks'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 1,
+      methodology: 'Estimated based on average emissions for book production and distribution'
+    },
+    sustainabilityScore: 70,
+    recyclability: {
+      percentage: 90,
+      notes: 'Paper is highly recyclable, though glue and ink may reduce recyclability slightly'
+    },
+    environmentalNotes: 'Books have a relatively low environmental impact compared to electronic devices, but sustainable sourcing of paper is important'
+  },
+  confidence: 0.95,
+  caution: 'Estimates are based on typical costs and may vary slightly depending on specific edition and print run'
+}
+ POST /api/analyze 200 in 8852ms
+ ✓ Compiled in 19ms
+ ✓ Compiled in 22ms
+ ✓ Compiled in 436ms
+ ✓ Compiled / in 42ms
+ GET / 200 in 160ms
+ ✓ Compiled in 74ms
+ ✓ Compiled in 18ms
+ ✓ Compiled in 20ms
+ ✓ Compiled in 51ms
+API called - starting analysis
+Image received, length: 73807
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {
+  "productName": "3FIT Protein Shake Vanille",
+  "category": "Protein Shake",
+  "materials": ["Water", "Milk Protein Concentrate", "Vanilla Flavor", "Sweeteners", "Stabilizers", "Plastic Bottle"],
+  "estimatedBOM": {
+    "lowUSD": 0.50,
+    "highUSD": 0.80,
+    "methodology": "Estimated based on typical ingredient costs for protein shakes, packaging, and manufacturing processes."
+  },
+  "marketPrice": {
+    "lowUSD": 2.00,
+    "highUSD": 3.50,
+    "currency": "USD",
+    "notes": "Based on current market prices for similar protein shake products."
+  },
+  "environmentalImpact": {
+    "carbonFootprint": {
+      "kgCO2e": 0.5,
+      "methodology": "Calculated based on typical emissions from dairy production, processing, and packaging."
+    },
+    "sustainabilityScore": 60,
+    "recyclability": {
+      "percentage": 80,
+      "notes": "Plastic bottle is widely recyclable, but cap and label may not be."
+    },
+    "environmentalNotes": "Considerations include dairy sourcing and plastic waste."
+  },
+  "confidence": 0.9,
+  "caution": "Estimates are based on typical market data and may vary by region."
+}
+Parsed JSON: {
+  productName: '3FIT Protein Shake Vanille',
+  category: 'Protein Shake',
+  materials: [
+    'Water',
+    'Milk Protein Concentrate',
+    'Vanilla Flavor',
+    'Sweeteners',
+    'Stabilizers',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein shakes, packaging, and manufacturing processes.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3.5,
+    currency: 'USD',
+    notes: 'Based on current market prices for similar protein shake products.'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0.5,
+      methodology: 'Calculated based on typical emissions from dairy production, processing, and packaging.'
+    },
+    sustainabilityScore: 60,
+    recyclability: {
+      percentage: 80,
+      notes: 'Plastic bottle is widely recyclable, but cap and label may not be.'
+    },
+    environmentalNotes: 'Considerations include dairy sourcing and plastic waste.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+Final result: {
+  productName: '3FIT Protein Shake Vanille',
+  category: 'Protein Shake',
+  materials: [
+    'Water',
+    'Milk Protein Concentrate',
+    'Vanilla Flavor',
+    'Sweeteners',
+    'Stabilizers',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein shakes, packaging, and manufacturing processes.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3.5,
+    currency: 'USD',
+    notes: 'Based on current market prices for similar protein shake products.'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0.5,
+      methodology: 'Calculated based on typical emissions from dairy production, processing, and packaging.'
+    },
+    sustainabilityScore: 60,
+    recyclability: {
+      percentage: 80,
+      notes: 'Plastic bottle is widely recyclable, but cap and label may not be.'
+    },
+    environmentalNotes: 'Considerations include dairy sourcing and plastic waste.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+ POST /api/analyze 200 in 12241ms
+ ✓ Compiled in 64ms
+ ✓ Compiled in 31ms
+ ✓ Compiled in 44ms
+ ✓ Compiled / in 10ms
+ GET / 200 in 133ms
+API called - starting analysis
+Image received, length: 78191
+Calling OpenAI API...
+ ✓ Compiled in 19ms
+OpenAI API response received
+GPT Response: {
+  "productName": "3Fit Vanille Protein Drink",
+  "category": "Protein Drink",
+  "materials": ["Water", "Milk Protein Concentrate", "Flavorings", "Sweeteners", "Stabilizers", "Plastic Bottle"],
+  "estimatedBOM": {
+    "lowUSD": 0.50,
+    "highUSD": 0.80,
+    "methodology": "Estimated based on typical ingredient costs for protein drinks, packaging, and manufacturing expenses."
+  },
+  "marketPrice": {
+    "lowUSD": 2.00,
+    "highUSD": 3.00,
+    "currency": "USD",
+    "notes": "Based on average retail prices for similar protein drinks in the market."
+  },
+  "environmentalImpact": {
+    "carbonFootprint": {
+      "kgCO2e": 0.5,
+      "methodology": "Calculated based on typical emissions from production and transportation of bottled drinks."
+    },
+    "sustainabilityScore": 60,
+    "recyclability": {
+      "percentage": 80,
+      "notes": "Plastic bottle is recyclable, but cap and label may not be."
+    },
+    "environmentalNotes": "Considerations include plastic waste and energy used in production."
+  },
+  "confidence": 0.9,
+  "caution": "Estimates are based on visible product details and typical market data."
+}
+Parsed JSON: {
+  productName: '3Fit Vanille Protein Drink',
+  category: 'Protein Drink',
+  materials: [
+    'Water',
+    'Milk Protein Concentrate',
+    'Flavorings',
+    'Sweeteners',
+    'Stabilizers',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein drinks, packaging, and manufacturing expenses.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3,
+    currency: 'USD',
+    notes: 'Based on average retail prices for similar protein drinks in the market.'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0.5,
+      methodology: 'Calculated based on typical emissions from production and transportation of bottled drinks.'
+    },
+    sustainabilityScore: 60,
+    recyclability: {
+      percentage: 80,
+      notes: 'Plastic bottle is recyclable, but cap and label may not be.'
+    },
+    environmentalNotes: 'Considerations include plastic waste and energy used in production.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on visible product details and typical market data.'
+}
+Final result: {
+  productName: '3Fit Vanille Protein Drink',
+  category: 'Protein Drink',
+  materials: [
+    'Water',
+    'Milk Protein Concentrate',
+    'Flavorings',
+    'Sweeteners',
+    'Stabilizers',
+    'Plastic Bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein drinks, packaging, and manufacturing expenses.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3,
+    currency: 'USD',
+    notes: 'Based on average retail prices for similar protein drinks in the market.'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0.5,
+      methodology: 'Calculated based on typical emissions from production and transportation of bottled drinks.'
+    },
+    sustainabilityScore: 60,
+    recyclability: {
+      percentage: 80,
+      notes: 'Plastic bottle is recyclable, but cap and label may not be.'
+    },
+    environmentalNotes: 'Considerations include plastic waste and energy used in production.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on visible product details and typical market data.'
+}
+ POST /api/analyze 200 in 9816ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 19ms
+ ⨯ ReferenceError: scanBarcode is not defined
+    at TrueCostAI (src/app/page.tsx:275:23)
+  273 |             </button>
+  274 |             <button 
+> 275 |               onClick={scanBarcode} 
+      |                       ^
+  276 |               disabled={!streaming || scanningBarcode} 
+  277 |               className="px-4 py-3 rounded-lg border border-gray-300 text-black bg-white hover:bg-gray-50 disabled:opacity-50 transition-all duration-200 font-medium"
+  278 |             > {
+  digest: '1827716181'
+}
+ GET / 500 in 200ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 17ms
+ GET / 200 in 176ms
+ ✓ Compiled in 31ms
+API called - starting analysis
+Image received, length: 186111
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {"productName": "B Fit High Protein Milkshake Vanilla 460ml", "category": "Protein Shake", "materials": ["Milk protein", "Water", "Flavorings", "Sweeteners", "Plastic bottle"], "estimatedBOM": {"lowUSD": 0.50, "highUSD": 0.80, "methodology": "Estimated based on typical ingredient costs for protein shakes and packaging materials."}, "marketPrice": {"lowUSD": 2.00, "highUSD": 3.50, "currency": "USD", "notes": "Based on average retail prices for similar protein shakes."}, "environmentalImpact": {"carbonFootprint": {"kgCO2e": 0.5, "methodology": "Estimated based on typical emissions from dairy production, processing, and packaging."}, "sustainabilityScore": 60, "recyclability": {"percentage": 70, "notes": "Plastic bottle is recyclable, but cap and label may not be."}, "environmentalNotes": "Considerations include dairy production impact and plastic waste."}, "confidence": 0.9, "caution": "Estimates are based on typical market data and may vary by region."}
+Parsed JSON: {
+  productName: 'B Fit High Protein Milkshake Vanilla 460ml',
+  category: 'Protein Shake',
+  materials: [
+    'Milk protein',
+    'Water',
+    'Flavorings',
+    'Sweeteners',
+    'Plastic bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein shakes and packaging materials.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3.5,
+    currency: 'USD',
+    notes: 'Based on average retail prices for similar protein shakes.'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0.5,
+      methodology: 'Estimated based on typical emissions from dairy production, processing, and packaging.'
+    },
+    sustainabilityScore: 60,
+    recyclability: {
+      percentage: 70,
+      notes: 'Plastic bottle is recyclable, but cap and label may not be.'
+    },
+    environmentalNotes: 'Considerations include dairy production impact and plastic waste.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+Final result: {
+  productName: 'B Fit High Protein Milkshake Vanilla 460ml',
+  category: 'Protein Shake',
+  materials: [
+    'Milk protein',
+    'Water',
+    'Flavorings',
+    'Sweeteners',
+    'Plastic bottle'
+  ],
+  estimatedBOM: {
+    lowUSD: 0.5,
+    highUSD: 0.8,
+    methodology: 'Estimated based on typical ingredient costs for protein shakes and packaging materials.'
+  },
+  marketPrice: {
+    lowUSD: 2,
+    highUSD: 3.5,
+    currency: 'USD',
+    notes: 'Based on average retail prices for similar protein shakes.'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0.5,
+      methodology: 'Estimated based on typical emissions from dairy production, processing, and packaging.'
+    },
+    sustainabilityScore: 60,
+    recyclability: {
+      percentage: 70,
+      notes: 'Plastic bottle is recyclable, but cap and label may not be.'
+    },
+    environmentalNotes: 'Considerations include dairy production impact and plastic waste.'
+  },
+  confidence: 0.9,
+  caution: 'Estimates are based on typical market data and may vary by region.'
+}
+ POST /api/analyze 200 in 7019ms
+ ✓ Compiled in 55ms
+ ✓ Compiled in 80ms
+ ✓ Compiled in 67ms
+ ✓ Compiled in 37ms
+ ✓ Compiled in 68ms
+API called - starting analysis
+Image received, length: 160335
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {"productName": "No product detected", "estimatedBOM": {"lowUSD": 0, "highUSD": 0, "methodology": "No product visible in frame"}, "marketPrice": {"lowUSD": 0, "highUSD": 0, "currency": "USD", "notes": "No product visible"}, "environmentalImpact": {"carbonFootprint": {"kgCO2e": 0, "methodology": "No product visible"}, "sustainabilityScore": 0, "recyclability": {"percentage": 0, "notes": "No product visible"}, "environmentalNotes": "No product visible"}}
+Parsed JSON: {
+  productName: 'No product detected',
+  estimatedBOM: { lowUSD: 0, highUSD: 0, methodology: 'No product visible in frame' },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'No product visible'
+  },
+  environmentalImpact: {
+    carbonFootprint: { kgCO2e: 0, methodology: 'No product visible' },
+    sustainabilityScore: 0,
+    recyclability: { percentage: 0, notes: 'No product visible' },
+    environmentalNotes: 'No product visible'
+  }
+}
+Final result: {
+  productName: 'No product detected',
+  estimatedBOM: { lowUSD: 0, highUSD: 0, methodology: 'No product visible in frame' },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'No product visible'
+  },
+  environmentalImpact: {
+    carbonFootprint: { kgCO2e: 0, methodology: 'No product visible' },
+    sustainabilityScore: 0,
+    recyclability: { percentage: 0, notes: 'No product visible' },
+    environmentalNotes: 'No product visible'
+  }
+}
+ POST /api/analyze 200 in 3924ms
+ ✓ Compiled in 26ms
+ ✓ Compiled in 23ms
+ ✓ Compiled in 17ms
+API called - starting analysis
+Image received, length: 176583
+Calling OpenAI API...
+OpenAI API response received
+GPT Response: {"productName": "Human detected! 😄", "category": "Human", "materials": ["Carbon-based lifeform", "Water", "Oxygen", "Dreams and aspirations"], "estimatedBOM": {"lowUSD": 0, "highUSD": 0, "methodology": "Humans are priceless! But if you're curious, the raw materials in a human body are worth about $160 in chemicals."}, "marketPrice": {"lowUSD": 0, "highUSD": 0, "currency": "USD", "notes": "Humans are not for sale! (That would be illegal and unethical)"}, "environmentalImpact": {"carbonFootprint": {"kgCO2e": 0, "methodology": "Humans are carbon-neutral when breathing normally"}, "sustainabilityScore": 100, "recyclability": {"percentage": 100, "notes": "Humans are 100% biodegradable and return to nature"}, "environmentalNotes": "Humans are actually pretty eco-friendly when you think about it!"}, "confidence": 1, "caution": "Hey there, beautiful human! 👋 This app is for analyzing products, not people. But you look great today!"}
+Parsed JSON: {
+  productName: 'Human detected! 😄',
+  category: 'Human',
+  materials: [
+    'Carbon-based lifeform',
+    'Water',
+    'Oxygen',
+    'Dreams and aspirations'
+  ],
+  estimatedBOM: {
+    lowUSD: 0,
+    highUSD: 0,
+    methodology: "Humans are priceless! But if you're curious, the raw materials in a human body are worth about $160 in chemicals."
+  },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'Humans are not for sale! (That would be illegal and unethical)'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0,
+      methodology: 'Humans are carbon-neutral when breathing normally'
+    },
+    sustainabilityScore: 100,
+    recyclability: {
+      percentage: 100,
+      notes: 'Humans are 100% biodegradable and return to nature'
+    },
+    environmentalNotes: 'Humans are actually pretty eco-friendly when you think about it!'
+  },
+  confidence: 1,
+  caution: 'Hey there, beautiful human! 👋 This app is for analyzing products, not people. But you look great today!'
+}
+Final result: {
+  productName: 'Human detected! 😄',
+  category: 'Human',
+  materials: [
+    'Carbon-based lifeform',
+    'Water',
+    'Oxygen',
+    'Dreams and aspirations'
+  ],
+  estimatedBOM: {
+    lowUSD: 0,
+    highUSD: 0,
+    methodology: "Humans are priceless! But if you're curious, the raw materials in a human body are worth about $160 in chemicals."
+  },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'Humans are not for sale! (That would be illegal and unethical)'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0,
+      methodology: 'Humans are carbon-neutral when breathing normally'
+    },
+    sustainabilityScore: 100,
+    recyclability: {
+      percentage: 100,
+      notes: 'Humans are 100% biodegradable and return to nature'
+    },
+    environmentalNotes: 'Humans are actually pretty eco-friendly when you think about it!'
+  },
+  confidence: 1,
+  caution: 'Hey there, beautiful human! 👋 This app is for analyzing products, not people. But you look great today!'
+}
+ POST /api/analyze 200 in 11466ms
+ ✓ Compiled in 64ms
+ ✓ Compiled in 60ms
+ ✓ Compiled in 19ms
+ ✓ Compiled in 17ms
+API called - starting analysis
+Image received, length: 141991
+Calling OpenAI API...
+ ✓ Compiled in 37ms
+OpenAI API response received
+GPT Response: {"productName": "Human detected! 😄", "category": "Human", "materials": ["Carbon-based lifeform", "Water", "Oxygen", "Dreams and aspirations"], "estimatedBOM": {"lowUSD": 0, "highUSD": 0, "methodology": "Humans are priceless! But if you're curious, the raw materials in a human body are worth about $160 in chemicals."}, "marketPrice": {"lowUSD": 0, "highUSD": 0, "currency": "USD", "notes": "Humans are not for sale! (That would be illegal and unethical)"}, "environmentalImpact": {"carbonFootprint": {"kgCO2e": 0, "methodology": "Humans are carbon-neutral when breathing normally"}, "sustainabilityScore": 100, "recyclability": {"percentage": 100, "notes": "Humans are 100% biodegradable and return to nature"}, "environmentalNotes": "Humans are actually pretty eco-friendly when you think about it!"}, "confidence": 1, "caution": "Hey there, beautiful human! 👋 This app is for analyzing products, not people. But you look great today!"}
+Parsed JSON: {
+  productName: 'Human detected! 😄',
+  category: 'Human',
+  materials: [
+    'Carbon-based lifeform',
+    'Water',
+    'Oxygen',
+    'Dreams and aspirations'
+  ],
+  estimatedBOM: {
+    lowUSD: 0,
+    highUSD: 0,
+    methodology: "Humans are priceless! But if you're curious, the raw materials in a human body are worth about $160 in chemicals."
+  },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'Humans are not for sale! (That would be illegal and unethical)'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0,
+      methodology: 'Humans are carbon-neutral when breathing normally'
+    },
+    sustainabilityScore: 100,
+    recyclability: {
+      percentage: 100,
+      notes: 'Humans are 100% biodegradable and return to nature'
+    },
+    environmentalNotes: 'Humans are actually pretty eco-friendly when you think about it!'
+  },
+  confidence: 1,
+  caution: 'Hey there, beautiful human! 👋 This app is for analyzing products, not people. But you look great today!'
+}
+Final result: {
+  productName: 'Human detected! 😄',
+  category: 'Human',
+  materials: [
+    'Carbon-based lifeform',
+    'Water',
+    'Oxygen',
+    'Dreams and aspirations'
+  ],
+  estimatedBOM: {
+    lowUSD: 0,
+    highUSD: 0,
+    methodology: "Humans are priceless! But if you're curious, the raw materials in a human body are worth about $160 in chemicals."
+  },
+  marketPrice: {
+    lowUSD: 0,
+    highUSD: 0,
+    currency: 'USD',
+    notes: 'Humans are not for sale! (That would be illegal and unethical)'
+  },
+  environmentalImpact: {
+    carbonFootprint: {
+      kgCO2e: 0,
+      methodology: 'Humans are carbon-neutral when breathing normally'
+    },
+    sustainabilityScore: 100,
+    recyclability: {
+      percentage: 100,
+      notes: 'Humans are 100% biodegradable and return to nature'
+    },
+    environmentalNotes: 'Humans are actually pretty eco-friendly when you think about it!'
+  },
+  confidence: 1,
+  caution: 'Hey there, beautiful human! 👋 This app is for analyzing products, not people. But you look great today!'
+}
+ POST /api/analyze 200 in 8069ms
+ ✓ Compiled in 15ms
+ ✓ Compiled in 20ms
+ ✓ Compiled in 43ms
+ ✓ Compiled in 17ms
+ ✓ Compiled in 16ms
+ ✓ Compiled in 17ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.4.6 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.2.138:3000
+
+ ✓ Starting...
+ ✓ Ready in 774ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.4.6 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.2.138:3000
+
+ ✓ Starting...
+ ✓ Ready in 606ms
+ ○ Compiling /api/analyze ...
+ ✓ Compiled /api/analyze in 657ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.tsjvfd86zo'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.tsjvfd86zo'
+}
+ ✓ Compiled /_error in 495ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.5p9mmi2qc07'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.5p9mmi2qc07'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.tsjvfd86zo'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.tsjvfd86zo'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.jx9endkltw'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.jx9endkltw'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.g0t5ve20e3'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.g0t5ve20e3'
+}
+ ○ Compiling / ...
+ ✓ Compiled / in 898ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.sntrxn737o'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.sntrxn737o'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.sntrxn737o'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.sntrxn737o'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+ ✓ Compiled /favicon.ico in 81ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.fy5nrb6jsdd'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.fy5nrb6jsdd'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.yke895r8kj7'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.yke895r8kj7'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.xbrb8bu33oq'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.xbrb8bu33oq'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.otc7da48mb'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.otc7da48mb'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.llikcao6bqk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.llikcao6bqk'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.mzsq83want'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.mzsq83want'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.ud14bv7gv89'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.ud14bv7gv89'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.tsb2we7khw'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.tsb2we7khw'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.vqh234kko6'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.vqh234kko6'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.rln7blx6m1'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/static/development/_buildManifest.js.tmp.rln7blx6m1'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sirioberati/Documents/true-cost-ai/.next/server/pages/_app/build-manifest.json'
+}
+[?25h
