@@ -567,15 +567,7 @@ export default function TrueCostAI() {
             </div>
           ) : (
             <div className="flex items-center space-x-2">
-              <span className="text-gray-400">Generate realistic AI images with</span>
-              <a 
-                href="https://kora.enhancor.ai" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="font-bold hover:underline transition-colors text-blue-300 hover:text-blue-200"
-              >
-                KORA
-              </a>
+              <span className="text-gray-400">Generate realistic AI images</span>
             </div>
           )}
                     {bannerText === 0 ? (
@@ -604,9 +596,9 @@ export default function TrueCostAI() {
               href="https://kora.enhancor.ai" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-bold transition-colors text-sm"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 text-sm shadow-lg hover:shadow-xl shadow-blue-500/50 hover:shadow-blue-500/70"
             >
-              Create Now →
+              Try KORA
             </a>
           )}
         </div>
