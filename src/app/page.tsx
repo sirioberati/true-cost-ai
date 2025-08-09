@@ -106,6 +106,35 @@ export default function TrueCostAI() {
   const [result, setResult] = useState<any>(null);
   const [currentFact, setCurrentFact] = useState(0);
   const [loadingProgress, setLoadingProgress] = useState(0);
+  const [bannerText, setBannerText] = useState(0);
+
+  // Rotate banner text with different timings
+  useEffect(() => {
+    let timeoutId1: NodeJS.Timeout;
+    let timeoutId2: NodeJS.Timeout;
+    
+    const startRotation = () => {
+      // Show personal brand slide for 5 seconds
+      setBannerText(0);
+      
+      timeoutId1 = setTimeout(() => {
+        // Show conversion slide for 10 seconds
+        setBannerText(1);
+        
+        timeoutId2 = setTimeout(() => {
+          // Restart the cycle
+          startRotation();
+        }, 10000);
+      }, 5000);
+    };
+
+    startRotation();
+
+    return () => {
+      if (timeoutId1) clearTimeout(timeoutId1);
+      if (timeoutId2) clearTimeout(timeoutId2);
+    };
+  }, []);
 
   useEffect(() => {
     let activeStream: MediaStream | undefined;
@@ -451,30 +480,56 @@ export default function TrueCostAI() {
       <canvas ref={canvasRef} className="hidden" />
       
       {/* Sticky bottom banner */}
-      <div className="fixed bottom-0 left-0 right-0 bg-black text-white p-3 border-t border-gray-800 z-[9999]" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999 }}>
-        <div className="flex justify-between items-center max-w-md mx-auto text-sm">
-          <div className="flex items-center space-x-2">
-            <span>by</span>
-            <a 
-              href="https://instagram.com/heysirio" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="font-semibold hover:underline transition-colors"
-            >
-              @heysirio
-            </a>
-          </div>
-          <div className="flex items-center space-x-2">
-            <span className="text-gray-400">Sirio loves</span>
+      <div className="fixed bottom-0 left-0 right-0 bg-black text-white p-4 border-t border-gray-800 z-[9999]" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999 }}>
+        <div className="flex justify-between items-center max-w-md mx-auto text-base">
+          {bannerText === 0 ? (
+            <div className="flex items-center space-x-2">
+              <span>by</span>
+              <a 
+                href="https://instagram.com/heysirio" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-bold hover:underline transition-colors text-blue-300 hover:text-blue-200"
+              >
+                @heysirio
+              </a>
+            </div>
+          ) : (
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-400">⚡ Try</span>
+              <a 
+                href="https://enhancor.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-bold hover:underline transition-colors text-blue-300 hover:text-blue-200"
+              >
+                Enhancor.ai
+              </a>
+              <span className="text-gray-400">fix AI photos now</span>
+            </div>
+          )}
+                    {bannerText === 0 ? (
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-400">🔥 10k+ users love</span>
+              <a 
+                href="https://enhancor.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-bold hover:underline transition-colors text-blue-300 hover:text-blue-200"
+              >
+                Enhancor.ai
+              </a>
+            </div>
+          ) : (
             <a 
               href="https://enhancor.ai" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="font-semibold hover:underline transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-bold transition-colors text-sm"
             >
-              Enhancor.ai
+              Try Now →
             </a>
-          </div>
+          )}
         </div>
       </div>
       
