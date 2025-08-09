@@ -501,7 +501,7 @@ export default function TrueCostAI() {
       <section className="w-full bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-3 mt-4">
         <div className="text-center mb-3">
           <h3 className="font-bold text-base text-gray-800 mb-1">Trusted by 10,000+ Users</h3>
-          <p className="text-xs text-gray-600">Transform your AI photos instantly</p>
+          <p className="text-xs text-gray-600">Built by Sirio with love</p>
         </div>
         <div className="flex justify-center space-x-3">
           <a 
@@ -567,7 +567,7 @@ export default function TrueCostAI() {
             </div>
           ) : (
             <div className="flex items-center space-x-2">
-              <span className="text-gray-400">Generate realistic AI images</span>
+              <span className="text-gray-400">🎨 Generate realistic AI images</span>
             </div>
           )}
                     {bannerText === 0 ? (
