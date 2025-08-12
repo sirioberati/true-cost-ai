@@ -1,4 +1,4 @@
-# TrueCost AI - Real-Time Product Cost Analysis
+# TrueCost AI - Real-Time Product Cost Analysis From TX10
 
 http://truecostai.netlify.app is a mobile-first web application that uses your device's camera to provide real-time analysis of products using GPT-5. It continuously analyzes the camera feed to identify products and estimate the true cost of materials (BOM - Bill of Materials) excluding labor, overhead, shipping, and marketing costs.
 
